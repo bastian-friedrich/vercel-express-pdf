@@ -2,7 +2,10 @@
     "builds": [
         {
             "src": "src/index.js",
-            "use": "@vercel/node"
+            "use": "@vercel/node",
+            "config": {
+                "includeFiles": ["src/template.html"]
+            }
         }
     ],
     "routes": [
